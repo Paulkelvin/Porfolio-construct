@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333333;
+  font-family: "Nunito", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+h1 {
+  color: #fcfcfc;
+}
+
+p {
+  font-weight: 400;
+}
+
+header {
+  position: relative;
+  height: 50vh;
+  padding: 0.5rem 5rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a {
+  color: #d9d9d9;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #fcfcfc;
+}
+
+.social-icons {
+  position: relative;
+  top: 45%;
+  display: flex;
+  align-items: center;
+  color: #ff8c00;
+  flex-direction: column;
+}
+
+.social-link {
+  color: #ff8c00;
+}
+
+.header-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.hire-btn {
+  padding: 0.5rem 0.8rem;
+  outline: none;
+  border: 1px solid #ff8c00;
+  color: #ff8c00;
+  background-color: transparent;
+  letter-spacing: 0.11rem;
+  cursor: pointer;
+  box-shadow: 0 0 5px 3px rgba(255, 140, 0, 0.2);
+}
+
+.hire-btn:hover {
+  box-shadow: 0 0 5px 3px rgba(255, 140, 0, 0.4);
+  color: #ffad4d;
+  border-color: #ffad4d;
+}
