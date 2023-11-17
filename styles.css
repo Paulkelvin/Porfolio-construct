@@ -49,8 +49,8 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(77, 77, 77, 0.85); /* semi-transparent background */
-  backdrop-filter: blur(10px); /* blur effect */
+  background-color: rgba(77, 77, 77, 0.85);
+  backdrop-filter: blur(10px);
   z-index: 1000;
 }
 
@@ -551,7 +551,7 @@ h2::after {
   }
 
   body {
-    background-image: url("./Assets/0B2A5570.JPG"); /* Path to your image */
+    background-image: url("Assets/0B2A5570.JPG"); /* Path to your image */
     background-size: cover;
     background-position: center;
   }
