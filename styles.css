@@ -119,6 +119,7 @@ nav ul li a:hover {
   flex-direction: column;
   gap: 0.3rem;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .vertical-line {
@@ -555,7 +556,7 @@ h2::after {
   }
 
   body {
-    background-image: url("Assets/0B2A5570.JPG");
+    background-image: url("Assets/IMG-20230610-WA0014.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

@@ -63,4 +63,20 @@ document.addEventListener("DOMContentLoaded", (event) => {
       closeModal(event.target);
     }
   });
+
+   // Query all anchor tags with a hash in the href attribute
+   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault(); // Prevent default anchor click behavior
+
+      // Get the target element's ID from the anchor's href attribute
+      const targetId = this.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
+
+      if (targetElement) {
+        // Scroll to the target element smoothly
+        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
 });
