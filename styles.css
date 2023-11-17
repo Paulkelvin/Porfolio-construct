@@ -578,7 +578,9 @@ h2::after {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(77, 77, 77, 0.85);
+    /* background-color: rgba(77, 77, 77, 0.85); */
+    background-color: rgba(230, 126, 34, 0.85);
+    opacity: 0.85;
     backdrop-filter: blur(10px);
     z-index: 1000;
   }
