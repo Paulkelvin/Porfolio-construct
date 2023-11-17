@@ -283,10 +283,11 @@ h2::after {
   min-width: 18.75rem;
   max-width: calc(33.333% - 20px);
   height: 16rem;
-  overflow: hidden;
+
   border-radius: 8px;
   position: relative;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .project {
@@ -550,7 +551,7 @@ h2::after {
   }
 
   body {
-    background-image: url("/Assets/0B2A5570.JPG"); /* Path to your image */
+    background-image: url("./Assets/0B2A5570.JPG"); /* Path to your image */
     background-size: cover;
     background-position: center;
   }
