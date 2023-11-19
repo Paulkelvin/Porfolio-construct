@@ -79,4 +79,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
       }
     });
   });
+
+  // About me read more button
+  document
+    .getElementById("read-more-btn")
+    .addEventListener("click", function () {
+      const hiddenContent = document.querySelector(".about-me-hidden");
+      hiddenContent.classList.toggle("about-me-shown");
+      this.style.display = "none";
+    });
 });
