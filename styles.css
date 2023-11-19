@@ -17,7 +17,8 @@ h2 {
   font-weight: 700;
 }
 
-h1 {
+h1,
+.header-title strong {
   color: #fcfcfc;
   text-align: center;
   font-size: 2.5rem;
@@ -101,7 +102,7 @@ nav ul li a:hover {
 .header-content {
   position: relative;
   top: 50%;
-  margin-top: 15rem;
+  margin-top: 20rem;
   transform: translateY(-50%);
   display: flex;
   align-items: center;
@@ -151,6 +152,12 @@ nav ul li a:hover {
 
 .social-link {
   color: #fcfcfc;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* About */
@@ -289,6 +296,10 @@ p.about-me {
   justify-content: center;
   gap: 20px;
   width: 90%;
+}
+
+#portfolio h3 {
+  margin-block-start: 0;
 }
 
 .projects-row {
@@ -593,10 +604,11 @@ p.about-me {
   html,
   body {
     overflow-x: hidden;
-    font-size: 14px;
+    font-size: 16px;
   }
 
-  h1 {
+  h1,
+  .header-title strong {
     font-size: 2rem;
   }
 
