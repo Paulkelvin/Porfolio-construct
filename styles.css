@@ -10,6 +10,14 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
+  overflow-x: hidden;
+}
+
+.no-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 h1,
@@ -359,7 +367,6 @@ p.about-me {
   min-width: 18.75rem;
   max-width: calc(33.333% - 20px);
   height: 16rem;
-
   border-radius: 8px;
   position: relative;
   cursor: pointer;

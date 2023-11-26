@@ -65,17 +65,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 
   // Query all anchor tags with a hash in the href attribute
-  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-    anchor.addEventListener("click", function (e) {
-      e.preventDefault(); // Prevent default anchor click behavior
+  const navLinks = document.querySelectorAll("a[href^='#'");
+  navLinks.forEach((navLink) => {
+    navLink.addEventListener("click", (e) => {
+      e.preventDefault();
 
       // Get the target element's ID from the anchor's href attribute
-      const targetId = this.getAttribute("href");
-      const targetElement = document.querySelector(targetId);
+      const getTargetId = navLink.getAttribute("href");
+      const getTargetElement = document.querySelector(getTargetId);
 
-      if (targetElement) {
-        // Scroll to the target element smoothly
-        targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+      // Scroll to the target element smoothly
+      if (getTargetElement) {
+        getTargetElement.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
       }
     });
   });
