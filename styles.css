@@ -508,6 +508,7 @@ p.about-me {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   width: 80%;
   max-width: 600px;
+  overflow-y: scroll;
   animation: modalOpen 0.5s ease-in-out;
   -webkit-animation: modalOpen 0.5s ease-in-out;
   transform: translateY(-50%);
@@ -529,6 +530,18 @@ p.about-me {
   to {
     opacity: 1;
   }
+}
+
+.modal-content h4 {
+  margin-block-end: 0;
+}
+
+.modal-content h3 {
+  color: #000;
+}
+
+.modal-content p {
+  font-size: 0.85rem;
 }
 
 .close-modal {
@@ -554,6 +567,32 @@ p.about-me {
   /* max-width: 100%; */
   height: auto;
   margin-bottom: 20px;
+}
+
+.tech-categories {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+}
+
+.tech-category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #e34f26;
+  border-radius: 25px;
+  padding: 5px 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tech-category i {
+  font-size: 1rem;
+}
+
+.tech-category span {
+  font-weight: bold;
+  font-size: 0.7rem;
 }
 
 /* Contact */
