@@ -71,16 +71,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
       e.preventDefault();
 
       // Get the target element's ID from the anchor's href attribute
-      const getTargetId = navLink.getAttribute("href");
-      const getTargetElement = document.querySelector(getTargetId);
+      const anchorAttribute = navLink.getAttribute("href");
+      const targetElement = document.querySelector(anchorAttribute);
 
       // Scroll to the target element smoothly
-      if (getTargetElement) {
-        getTargetElement.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
-      }
+      targetElement?.scrollIntoView({ behavior: "smooth", block: "start" });
     });
   });
 
@@ -92,4 +87,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
       hiddenContent.classList.toggle("about-me-shown");
       this.style.display = "none";
     });
+});
+
+// query all the anchor tags
+const allAnchor = document.querySelectorAll("li a");
+allAnchor.forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    // prevent anchor tag default behaviour
+    e.preventDefault();
+    // get each anchor tag attribute
+    const anchorAttribute = this.getAttribute("href");
+    // select element with that anchor tag id
+    const elementsWithAttribute = document.querySelectorAll(anchorAttribute);
+    elementsWithAttribute?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  });
 });
