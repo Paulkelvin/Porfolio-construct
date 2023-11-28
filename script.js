@@ -88,20 +88,3 @@ document.addEventListener("DOMContentLoaded", (event) => {
       this.style.display = "none";
     });
 });
-
-// query all the anchor tags
-const allAnchor = document.querySelectorAll("li a");
-allAnchor.forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    // prevent anchor tag default behaviour
-    e.preventDefault();
-    // get each anchor tag attribute
-    const anchorAttribute = this.getAttribute("href");
-    // select element with that anchor tag id
-    const elementsWithAttribute = document.querySelectorAll(anchorAttribute);
-    elementsWithAttribute?.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  });
-});
