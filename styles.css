@@ -848,3 +848,12 @@ p.about-me {
     padding: 10px;
   }
 }
+
+@media (max-width: 480px) {
+  body {
+    background-image: url("Assets/background-sm.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+}
