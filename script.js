@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 
   // Target all the .tech-box and .project-card elements
-  const elementsToWatch = document.querySelectorAll(".tech-box, .project-card");
+  const elementsToWatch = document.querySelectorAll(".tech-box");
 
   // Observe each element
   elementsToWatch.forEach((element) => {

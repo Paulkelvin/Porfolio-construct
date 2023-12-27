@@ -30,6 +30,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
     <title>
       Ibukun Adesanya - Frontend Developer | Innovative Web Solutions
@@ -147,7 +148,7 @@
       <section id="skills">
         <h2>Skills</h2>
         <div tabindex="0" class="tech-container">
-          <div tabindex="0" class="tech-box" style="--i: 1">
+          <div tabindex="0" class="tech-box" data-aos-easing="ease-in-out" data-aos-duration="800" data-aos="flip-down" style="--i: 1">
             <svg
               class="tech-icon"
               xmlns="http://www.w3.org/2000/svg"
@@ -172,7 +173,7 @@
             </svg>
             <p>HTML</p>
           </div>
-          <div tabindex="0" class="tech-box" style="--i: 2">
+          <div tabindex="0" class="tech-box" data-aos-easing="ease-in-out" data-aos-duration="800" data-aos="flip-down" style="--i: 2">
             <svg
               class="tech-icon"
               xmlns="http://www.w3.org/2000/svg"
@@ -187,7 +188,7 @@
             </svg>
             <p>GIT</p>
           </div>
-          <div tabindex="0" class="tech-box" style="--i: 3">
+          <div tabindex="0" class="tech-box" data-aos-easing="ease-in-out" data-aos-duration="800" data-aos="flip-down" style="--i: 3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -222,7 +223,7 @@
             </svg>
             <p>CSS</p>
           </div>
-          <div tabindex="0" class="tech-box" style="--i: 4">
+          <div tabindex="0" class="tech-box" data-aos-easing="ease-in-out" data-aos-duration="800" data-aos="flip-down" style="--i: 4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -237,7 +238,7 @@
             </svg>
             <p>JS</p>
           </div>
-          <div tabindex="0" class="tech-box" style="--i: 5">
+          <div tabindex="0" class="tech-box" data-aos-easing="ease-in-out" data-aos-duration="800" data-aos="flip-down" style="--i: 5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="128"
@@ -313,7 +314,7 @@
             </svg>
             <p>BOOTSTRAP</p>
           </div>
-          <div tabindex="0" class="tech-box" style="--i: 6">
+          <div tabindex="0" class="tech-box" data-aos-easing="ease-in-out" data-aos-duration="800" data-aos="flip-down" style="--i: 6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="256"
@@ -336,7 +337,7 @@
             </svg>
             <p>SHOPIFY</p>
           </div>
-          <div tabindex="0" class="tech-box" style="--i: 7">
+          <div tabindex="0" class="tech-box" data-aos-easing="ease-in-out" data-aos-duration="800" data-aos="flip-down" style="--i: 7">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="256"
@@ -351,7 +352,7 @@
             </svg>
             <p>REACT</p>
           </div>
-          <div tabindex="0" class="tech-box" style="--i: 8">
+          <div tabindex="0" class="tech-box" data-aos-easing="ease-in-out" data-aos-duration="800" data-aos="flip-down" style="--i: 8">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="256"
@@ -376,7 +377,7 @@
         <h3>Discover My Portfolio of Creative Solutions✨</h3>
         <div tabindex="0" class="projects-row">
           <!-- Project 1 -->
-          <div tabindex="0" class="project-card">
+          <div tabindex="0" class="project-card" data-aos-easing="ease-in-out" data-aos-duration="800"  data-aos="flip-down">
             <article
               class="project"
               style="background-image: url('./Assets/geo-logic.png')"
@@ -454,7 +455,7 @@
               </p>
             </div>
           </div>
-          <div tabindex="0" class="project-card">
+          <div tabindex="0" class="project-card" data-aos-easing="ease-in-out" data-aos-duration="800" data-aos="flip-down">
             <article
               class="project"
               style="background-image: url('./Assets/enzoe_portfolio.png')"
@@ -526,7 +527,8 @@
                  </p>
             </div>
           </div>
-          <div tabindex="0" class="project-card">
+
+          <div tabindex="0" class="project-card" data-aos-easing="ease-in-out" data-aos-duration="800" data-aos="flip-down">
             <article
               class="project"
               style="background-image: url('./Assets/NYCMALL.png')"
@@ -593,7 +595,7 @@
             </div>
           </div>
 
-          <div tabindex="0" class="project-card">
+          <div tabindex="0" class="project-card" data-aos-easing="ease-in-out" data-aos-duration="800" data-aos="flip-down">
             <article
               class="project"
               style="background-image: url('./Assets/adesuapa.com_.png')"
@@ -641,7 +643,7 @@
           </div>
         </div>
       </section>
-      <section id="contact">
+      <section id="contact" data-aos-easing="ease-in-out" data-aos-duration="800" data-aos="flip-down">
         <h2>Contact Me</h2>
         <h3>Have a Project in Mind? Contact Me! 🚀</h3>
         <div tabindex="0" class="container">
@@ -691,7 +693,10 @@
     <footer class="site-footer">
       <p>&copy; 2023 by Ibukun Adesanya. All Rights Reserved.</p>
     </footer>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
